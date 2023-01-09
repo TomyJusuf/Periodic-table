@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: cornflowerblue;
+  background-color: rgb(35, 41, 51);
   font-size: 65%;
 }
 .container {
@@ -16,6 +16,7 @@ body {
   grid-template-columns: repeat(18, 1fr);
   column-gap: 0.2rem;
   row-gap: 0.2rem;
+  /* grid-column: ; */
 }
 
 .container > div {
@@ -29,6 +30,8 @@ body {
   padding-top: 5px;
   padding-left: 5px;
   border-radius: 10px;
+  color: #fff;
+  font-family: sans-serif;
 }
 
 .card:nth-of-type(57),
@@ -46,7 +49,7 @@ body {
 .card:nth-of-type(69),
 .card:nth-of-type(70),
 .card:nth-of-type(71) {
-  margin-top: 20%;
+  margin-top: 60%;
 }
 .card:nth-of-type(1) {
   grid-column: 1/2;
@@ -144,7 +147,7 @@ body {
   grid-row: 8/9;
 }
 .card:nth-of-type(89) {
-  grid-column: 3;
+  grid-column: 3/4;
 }
 
 .card:nth-of-type(90) {
