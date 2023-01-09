@@ -12,11 +12,22 @@ body {
   display: grid;
   max-width: 1490px;
   height: 100%;
-  /* background-color: red; */
   margin: 250px auto;
   grid-template-columns: repeat(18, 1fr);
   column-gap: 0.2rem;
   row-gap: 0.2rem;
+}
+
+.container > div {
+  display: flex;
+  width: 100%;
+  height: 5.8rem;
+  background: white;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 10px;
 }
 
 .card:nth-of-type(57),
@@ -198,16 +209,33 @@ body {
 .container .card {
   flex-wrap: wrap;
 }
-.container > div {
-  display: flex;
-  width: 100%;
-  height: 5.8rem;
-  background: white;
-  /* border: 2px solid blue; */
-  justify-content: center;
-  /* padding: 10px; */
-  align-items: flex-start;
-  text-align: center;
-  padding-top: 10px;
-  border-radius: 10px;
+:root {
+  --alkali-metals: #244d57;
+  --alkaline-earth-metal: #622e39;
+  --transition-metals: #433c65;
+  --post-trasition-metals: #2f4d47;
+  --metalloids: #523e1b;
+  --reactive-non-metals: #2a4165;
+  --noble-gases: #623842;
+  --lanthanides: #004a77;
+  --actinides: #613b28;
+  --unknown-properties: #46474c;
+}
+
+.card:nth-of-type(3),
+.card:nth-of-type(11),
+.card:nth-of-type(19),
+.card:nth-of-type(37),
+.card:nth-of-type(55),
+.card:nth-of-type(87) {
+  background-color: var(--alkali-metals);
+}
+
+.card:nth-of-type(4),
+.card:nth-of-type(12),
+.card:nth-of-type(20),
+.card:nth-of-type(38),
+.card:nth-of-type(56),
+.card:nth-of-type(88) {
+  background-color: var(--alkaline-earth-metal);
 }
