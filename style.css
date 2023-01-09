@@ -23,10 +23,11 @@ body {
   width: 100%;
   height: 5.8rem;
   background: white;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 5px;
+  padding-left: 5px;
   border-radius: 10px;
 }
 
@@ -238,4 +239,131 @@ body {
 .card:nth-of-type(56),
 .card:nth-of-type(88) {
   background-color: var(--alkaline-earth-metal);
+}
+
+.card:nth-of-type(21),
+.card:nth-of-type(22),
+.card:nth-of-type(23),
+.card:nth-of-type(24),
+.card:nth-of-type(25),
+.card:nth-of-type(26),
+.card:nth-of-type(27),
+.card:nth-of-type(28),
+.card:nth-of-type(29),
+.card:nth-of-type(30),
+.card:nth-of-type(39),
+.card:nth-of-type(40),
+.card:nth-of-type(41),
+.card:nth-of-type(42),
+.card:nth-of-type(43),
+.card:nth-of-type(44),
+.card:nth-of-type(45),
+.card:nth-of-type(46),
+.card:nth-of-type(47),
+.card:nth-of-type(48),
+.card:nth-of-type(72),
+.card:nth-of-type(73),
+.card:nth-of-type(74),
+.card:nth-of-type(75),
+.card:nth-of-type(76),
+.card:nth-of-type(77),
+.card:nth-of-type(78),
+.card:nth-of-type(79),
+.card:nth-of-type(80),
+.card:nth-of-type(104),
+.card:nth-of-type(105),
+.card:nth-of-type(106),
+.card:nth-of-type(107),
+.card:nth-of-type(108) {
+  background-color: var(--transition-metals);
+}
+
+.card:nth-of-type(13),
+.card:nth-of-type(31),
+.card:nth-of-type(49),
+.card:nth-of-type(50),
+.card:nth-of-type(81),
+.card:nth-of-type(82),
+.card:nth-of-type(83),
+.card:nth-of-type(84),
+.card:nth-of-type(85) {
+  background-color: var(--post-trasition-metals);
+}
+.card:nth-of-type(5),
+.card:nth-of-type(14),
+.card:nth-of-type(32),
+.card:nth-of-type(33),
+.card:nth-of-type(51),
+.card:nth-of-type(52) {
+  background-color: var(--metalloids);
+}
+.card:nth-of-type(1),
+.card:nth-of-type(6),
+.card:nth-of-type(7),
+.card:nth-of-type(8),
+.card:nth-of-type(9),
+.card:nth-of-type(15),
+.card:nth-of-type(16),
+.card:nth-of-type(17),
+.card:nth-of-type(34),
+.card:nth-of-type(35),
+.card:nth-of-type(53) {
+  background-color: var(--reactive-non-metals);
+}
+
+.card:nth-of-type(2),
+.card:nth-of-type(10),
+.card:nth-of-type(18),
+.card:nth-of-type(36),
+.card:nth-of-type(54),
+.card:nth-of-type(86) {
+  background-color: var(--noble-gases);
+}
+.card:nth-of-type(57),
+.card:nth-of-type(58),
+.card:nth-of-type(59),
+.card:nth-of-type(60),
+.card:nth-of-type(61),
+.card:nth-of-type(62),
+.card:nth-of-type(63),
+.card:nth-of-type(64),
+.card:nth-of-type(65),
+.card:nth-of-type(66),
+.card:nth-of-type(67),
+.card:nth-of-type(68),
+.card:nth-of-type(69),
+.card:nth-of-type(70),
+.card:nth-of-type(71) {
+  background-color: var(--lanthanides);
+}
+
+.card:nth-of-type(89),
+.card:nth-of-type(90),
+.card:nth-of-type(91),
+.card:nth-of-type(92),
+.card:nth-of-type(93),
+.card:nth-of-type(94),
+.card:nth-of-type(95),
+.card:nth-of-type(96),
+.card:nth-of-type(97),
+.card:nth-of-type(98),
+.card:nth-of-type(99),
+.card:nth-of-type(100),
+.card:nth-of-type(101),
+.card:nth-of-type(102),
+.card:nth-of-type(103) {
+  background-color: var(--actinides);
+}
+
+.card:nth-of-type(109),
+.card:nth-of-type(110),
+.card:nth-of-type(111),
+.card:nth-of-type(112),
+.card:nth-of-type(113),
+.card:nth-of-type(114),
+.card:nth-of-type(115),
+.card:nth-of-type(116),
+.card:nth-of-type(117),
+.card:nth-of-type(118) {
+  background-color: var(--unknown-properties);
 }
