@@ -181,16 +181,144 @@ const cardName = [
     name: "Copper",
     weight: 63.546,
   },
+  {
+    atomicNumber: 30,
+    shortName: "Zn",
+    name: "Zinc",
+    weight: 65.38,
+  },
+  {
+    atomicNumber: 31,
+    shortName: "Ga",
+    name: "Gallium",
+    weight: 69.723,
+  },
+  {
+    atomicNumber: 32,
+    shortName: "Ge",
+    name: "Germanium",
+    weight: 72.63,
+  },
+  ,
+  {
+    atomicNumber: 33,
+    shortName: "As",
+    name: "Arsenic",
+    weight: 74.922,
+  },
+  ,
+  {
+    atomicNumber: 34,
+    shortName: "Se",
+    name: "Selenium",
+    weight: 78.971,
+  },
+  ,
+  {
+    atomicNumber: 35,
+    shortName: "Br",
+    name: "Bromine",
+    weight: 79.904,
+  },
+  ,
+  {
+    atomicNumber: 36,
+    shortName: "Kr",
+    name: "Krypton",
+    weight: 83.798,
+  },
+  ,
+  {
+    atomicNumber: 37,
+    shortName: "Rb",
+    name: "Rubidium",
+    weight: 85.468,
+  },
+  ,
+  {
+    atomicNumber: 38,
+    shortName: "Sr",
+    name: "Strontium",
+    weight: 87.62,
+  },
+  ,
+  {
+    atomicNumber: 39,
+    shortName: "Y",
+    name: "Yttrium",
+    weight: 88.906,
+  },
+  ,
+  {
+    atomicNumber: 40,
+    shortName: "Zn",
+    name: "Zirconium",
+    weight: 91.224,
+  },
+  ,
+  {
+    atomicNumber: 41,
+    shortName: "Nb",
+    name: "Niobium",
+    weight: 92.95,
+  },
+  ,
+  {
+    atomicNumber: 42,
+    shortName: "Mo",
+    name: "Molybdenum",
+    weight: 95.95,
+  },
+  ,
+  {
+    atomicNumber: 43,
+    shortName: "Tc",
+    name: "Technetium",
+    weight: "(98)",
+  },
+  ,
+  {
+    atomicNumber: 44,
+    shortName: "Ru",
+    name: "Ruthenium",
+    weight: 101.07,
+  },
+  ,
+  {
+    atomicNumber: 45,
+    shortName: "Pd",
+    name: "Palladium",
+    weight: 106.42,
+  },
+  ,
+  {
+    atomicNumber: 46,
+    shortName: "Ag",
+    name: "Silver",
+    weight: 107.87,
+  },
+  ,
+  {
+    atomicNumber: 47,
+    shortName: "Cd",
+    name: "Cadmium",
+    weight: 112.41,
+  },
+  ,
+  {
+    atomicNumber: 49,
+    shortName: "In",
+    name: "Indium",
+    weight: 114.82,
+  },
+  ,
+  {
+    atomicNumber: 50,
+    shortName: "Sn",
+    name: "Tin",
+    weight: 118.71,
+  },
 ];
-
-html = `
-    <div class="card">
-    <h2 class="atomic--number"></h2>
-    <p class="weight"></p>
-    <p class="shortcut" id="cut"></p>
-    <p class="name"></p>
-    </div> 
-    `;
 
 function returnCard(cardName) {
   return (
@@ -209,4 +337,15 @@ function returnCard(cardName) {
 }
 // console.log(html);
 document.getElementById("container").innerHTML = returnCard(cardName);
+
+/*
+html = `
+    <div class="card">
+    <h2 class="atomic--number"></h2>
+    <p class="weight"></p>
+    <p class="shortcut" id="cut"></p>
+    <p class="name"></p>
+    </div>
+    `;
 console.log(html);
+*/
