@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;800&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -9,51 +11,55 @@ body {
   font-size: 65%;
 }
 .container {
+  font-family: "Montserrat", sans-serif;
   display: grid;
-  max-width: 1350px;
+  max-width: 1300px;
   height: 100%;
   margin: 250px auto;
-  /* justify-content: center; */
   grid-template-columns: repeat(18, 1fr);
-  column-gap: 0.1rem;
-  row-gap: 0.1rem;
+  column-gap: 0.2rem;
+  row-gap: 0.2rem;
 }
 
 .container > .card {
   position: relative;
-  flex-direction: row;
   width: 100%;
   height: 5rem;
-  border-radius: 10px;
+  border-radius: 5px;
   color: #fff;
   font-family: sans-serif;
-  border: 3px solid rgb(41, 36, 36);
+  /* border: 0.12rem solid rgb(197, 186, 186); */
   cursor: pointer;
   justify-content: center;
   text-align: center;
+  box-shadow: 1px 1px 5px 2px rgb(112, 112, 106);
 }
+.container .card {
+  flex-wrap: wrap;
+}
+
 .card {
   display: flex;
 }
 .space-between {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  margin-left: 5px;
+  justify-content: space-between;
 }
 
 .container > .card > .space-between {
-  background-color: blue;
   height: 20px;
-  display: flex;
 }
 .atomic--number {
-  margin-left: -5px;
   font-size: 10px;
   align-self: center;
 }
 .weight {
+  display: none;
   font-size: 10px;
   align-self: center;
+  margin-right: 5px;
 }
 
 .direction-column {
@@ -67,10 +73,14 @@ body {
   justify-items: center;
   align-self: center;
   flex-wrap: wrap;
-  display: block;
+  display: inline-block;
 
-  flex-basis: 25px;
+  flex-basis: 50px;
   font-size: 30px;
+}
+.direction-column > .name {
+  overflow: hidden;
+  width: 50px;
 }
 
 .card:nth-of-type(57),
@@ -249,16 +259,13 @@ body {
 .card:nth-of-type(103) {
   grid-row: 9/10;
 }
-.container .card {
-  flex-wrap: wrap;
-}
 :root {
-  --alkali-metals: #244d57;
-  --alkaline-earth-metal: #622e39;
-  --transition-metals: #433c65;
-  --post-trasition-metals: #2f4d47;
-  --metalloids: #523e1b;
-  --reactive-non-metals: #2a4165;
+  --alkali-metals: #154f5e;
+  --alkaline-earth-metal: #6e2031;
+  --transition-metals: #1f1747;
+  --post-trasition-metals: #1b3a34;
+  --metalloids: #463313;
+  --reactive-non-metals: #0e2344;
   --noble-gases: #623842;
   --lanthanides: #004a77;
   --actinides: #613b28;
@@ -414,4 +421,6 @@ body {
   transform: scale(1.8);
   border: none;
   z-index: 10;
+  box-shadow: 1px 1px 15px 3px rgb(194, 232, 241);
+  color: rgb(230, 224, 224);
 }

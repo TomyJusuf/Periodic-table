@@ -111,7 +111,7 @@ const cardName = [
     atomicNumber: 18,
     shortName: "Ar",
     name: "Argon",
-    weight: "39.948",
+    weight: 39.948,
   },
   {
     atomicNumber: 19,
@@ -311,12 +311,119 @@ const cardName = [
     name: "Indium",
     weight: 114.82,
   },
-  ,
   {
     atomicNumber: 50,
     shortName: "Sn",
     name: "Tin",
     weight: 118.71,
+  },
+  {
+    atomicNumber: 51,
+    shortName: "Sb",
+    name: "Antonomy",
+    weight: "118.76",
+  },
+  {
+    atomicNumber: 52,
+    shortName: "Te",
+    name: "Tellurium",
+    weight: 127.6,
+  },
+  {
+    atomicNumber: 53,
+    shortName: "I",
+    name: "Iodine",
+    weight: 126.9,
+  },
+  {
+    atomicNumber: 54,
+    shortName: "Xe",
+    name: "Xenom",
+    weight: 131.29,
+  },
+  {
+    atomicNumber: 55,
+    shortName: "Cs",
+    name: "Caesium",
+    weight: "132.91",
+  },
+  {
+    atomicNumber: 56,
+    shortName: "Ba",
+    name: "Barium",
+    weight: 137.33,
+  },
+  {
+    atomicNumber: 57,
+    shortName: "La",
+    name: "Lanthanum",
+    weight: 138.91,
+  },
+  {
+    atomicNumber: 58,
+    shortName: "Ce",
+    name: "Cerium",
+    weight: 140.12,
+  },
+  {
+    atomicNumber: 59,
+    shortName: "Pr",
+    name: "Praseodymium",
+    weight: 138.91,
+  },
+  {
+    atomicNumber: 60,
+    shortName: "Nd",
+    name: "Neodymium",
+    weight: 144.24,
+  },
+  {
+    atomicNumber: 61,
+    shortName: "Pm",
+    name: "Promethium",
+    weight: 145,
+  },
+  {
+    atomicNumber: 62,
+    shortName: "Sm",
+    name: "Samarium",
+    weight: 150.36,
+  },
+  {
+    atomicNumber: 63,
+    shortName: "Eu",
+    name: "Europium",
+    weight: 151.96,
+  },
+  {
+    atomicNumber: 64,
+    shortName: "Gd",
+    name: "Gadolinium",
+    weight: 157.25,
+  },
+  {
+    atomicNumber: 65,
+    shortName: "Tb",
+    name: "Terbium",
+    weight: 158.93,
+  },
+  {
+    atomicNumber: 66,
+    shortName: "Dy",
+    name: "Dysprosium",
+    weight: 162.5,
+  },
+  {
+    atomicNumber: 67,
+    shortName: "Ho",
+    name: "Holmium",
+    weight: 164.93,
+  },
+  {
+    atomicNumber: 68,
+    shortName: "Er",
+    name: "Erbium",
+    weight: 167.26,
   },
 ];
 
@@ -325,18 +432,23 @@ function returnCard(cardName) {
     cardName
       .map(
         (cardName) => `
-  <div class="card">
+   <div class="card">
+   <div class="space-between">
     <h2 class="atomic--number">${cardName.atomicNumber}</h2>
-    <p class="weight">${cardName.weight}</p>
+    <h2 class="weight">${cardName.weight}</h2>
+   </div>
+
+   <div class="direction-column">
     <p class="shortcut" id="cut">${cardName.shortName}</p>
     <p class="name">${cardName.name}</p>
+   </div>
   </div>`
       )
       .join("") + "</div>"
   );
 }
 // console.log(html);
-// document.getElementById("container").innerHTML = returnCard(cardName);
+document.getElementById("container").innerHTML = returnCard(cardName);
 
 /*
 html = `
