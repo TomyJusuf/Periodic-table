@@ -336,7 +336,7 @@ function returnCard(cardName) {
   );
 }
 // console.log(html);
-document.getElementById("container").innerHTML = returnCard(cardName);
+// document.getElementById("container").innerHTML = returnCard(cardName);
 
 /*
 html = `

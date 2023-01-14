@@ -10,9 +10,10 @@ body {
 }
 .container {
   display: grid;
-  max-width: 1450px;
+  max-width: 1350px;
   height: 100%;
   margin: 250px auto;
+  /* justify-content: center; */
   grid-template-columns: repeat(18, 1fr);
   column-gap: 0.1rem;
   row-gap: 0.1rem;
@@ -20,47 +21,56 @@ body {
 
 .container > .card {
   position: relative;
-  display: flex;
   flex-direction: row;
   width: 100%;
   height: 5rem;
-  background: white;
   border-radius: 10px;
   color: #fff;
   font-family: sans-serif;
   border: 3px solid rgb(41, 36, 36);
   cursor: pointer;
+  justify-content: center;
+  text-align: center;
 }
-.card > .atomic--number {
-  height: 10px;
-  font-size: 10px;
-  display: inline-flex;
-  position: relative;
-  margin-left: 10px;
-  margin-top: 2px;
-}
-
-.card > .weight {
-  font-size: 10px;
-  position: relative;
-  margin-left: 12px;
-  display: none;
-  margin-top: 2px;
-}
-.card > .shortcut {
+.card {
   display: flex;
-  font-size: 35px;
-  align-self: center;
-  margin-left: 35%;
-  position: absolute;
-  justify-self: center;
+}
+.space-between {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
-.card .name {
+.container > .card > .space-between {
+  background-color: blue;
+  height: 20px;
+  display: flex;
+}
+.atomic--number {
+  margin-left: -5px;
+  font-size: 10px;
+  align-self: center;
+}
+.weight {
+  font-size: 10px;
+  align-self: center;
+}
+
+.direction-column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.direction-column > .shortcut {
   justify-items: center;
-  align-self: end;
-  font-size: 11px;
-  margin-bottom: 5px;
+  align-self: center;
+  flex-wrap: wrap;
+  display: block;
+
+  flex-basis: 25px;
+  font-size: 30px;
 }
 
 .card:nth-of-type(57),
