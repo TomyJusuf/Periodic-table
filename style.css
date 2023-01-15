@@ -11,7 +11,7 @@ body {
   font-size: 65%;
 }
 .container {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Noto Sans Tangsa", sans-serif;
   display: grid;
   max-width: 1300px;
   height: 100%;
@@ -155,10 +155,10 @@ body {
   grid-column: 9/10;
 }
 .card:nth-of-type(64) {
-  grid-column: 10;
+  grid-column: 10/11;
 }
 .card:nth-of-type(65) {
-  grid-column: 11;
+  grid-column: 11/12;
 }
 .card:nth-of-type(66) {
   grid-column: 12;
