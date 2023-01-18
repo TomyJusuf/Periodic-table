@@ -12,10 +12,11 @@ body {
 }
 .container {
   font-family: "Noto Sans Tangsa", sans-serif;
+  font-weight: 300;
   display: grid;
   max-width: 1300px;
   height: 100%;
-  margin: 250px auto;
+  margin: 70px auto;
   grid-template-columns: repeat(18, 1fr);
   column-gap: 0.2rem;
   row-gap: 0.2rem;
@@ -74,7 +75,7 @@ body {
   align-self: center;
   flex-wrap: wrap;
   display: inline-block;
-
+  font-weight: bold;
   flex-basis: 50px;
   font-size: 30px;
 }
@@ -418,9 +419,42 @@ body {
 }
 
 .card:hover {
+  /* display: visible; */
   transform: scale(1.8);
   border: none;
   z-index: 10;
   box-shadow: 1px 1px 15px 3px rgb(194, 232, 241);
   color: rgb(230, 224, 224);
+}
+.card:hover .weight {
+  display: block;
+}
+
+.metal-bars {
+  display: grid;
+  /* display: inline-block; */
+  /* width: 100%; */
+  /* margin: 0 25%; */
+  /* height: 155px; */
+  /* grid-template-columns: repeat(2, 3fr); */
+  /* flex-wrap: wrap; */
+  /* justify-content: start; */
+  display: flex;
+}
+
+#alkMetal:checked {
+  background-color: red;
+}
+#alkMetal {
+  border: 2px solid rgb(211, 23, 23);
+  background-color: rgb(240, 224, 224);
+
+  box-shadow: 0 0 0 5px rgb(236, 222, 221);
+  appearance: none;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  margin-left: 15px;
+  background-color: rgb(223, 32, 32);
+  transition: all ease-in 0.2s;
 }
