@@ -754,17 +754,4 @@ function returnCard(cardName) {
       .join("") + "</div>"
   );
 }
-// console.log(html);
 document.getElementById("container").innerHTML = returnCard(cardName);
-
-/*
-html = `
-    <div class="card">
-    <h2 class="atomic--number"></h2>
-    <p class="weight"></p>
-    <p class="shortcut" id="cut"></p>
-    <p class="name"></p>
-    </div>
-    `;
-console.log(html);
-*/
