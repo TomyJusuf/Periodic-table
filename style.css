@@ -7,29 +7,31 @@
 }
 
 body {
-  background-color: rgb(54, 56, 59);
+  background-color: rgb(37, 39, 41);
   font-size: 65%;
+  /* display: flex; */
 }
 .container {
-  font-family: "Noto Sans Tangsa", sans-serif;
-  font-weight: 300;
+  position: relative;
   display: grid;
-  max-width: 1300px;
+  max-width: 1200px;
   height: 100%;
-  margin: 70px auto;
+  margin: 30px auto 20px;
+  /* margin-left: 25px;
+  margin-right: 25px !important; */
   grid-template-columns: repeat(18, 1fr);
   column-gap: 0.2rem;
   row-gap: 0.2rem;
 }
 
 .container > .card {
+  font-weight: 100;
   position: relative;
   width: 100%;
   height: 5rem;
   border-radius: 5px;
   color: #fff;
-  font-family: sans-serif;
-  /* border: 0.12rem solid rgb(197, 186, 186); */
+
   cursor: pointer;
   justify-content: center;
   text-align: center;
@@ -55,12 +57,14 @@ body {
 .atomic--number {
   font-size: 10px;
   align-self: center;
+  font-family: "Noto Sans Tangsa", sans-serif;
 }
 .weight {
   display: none;
   font-size: 10px;
   align-self: center;
   margin-right: 5px;
+  font-family: "Noto Sans Tangsa", sans-serif;
 }
 
 .direction-column {
@@ -75,13 +79,15 @@ body {
   align-self: center;
   flex-wrap: wrap;
   display: inline-block;
-  font-weight: bold;
+  font-weight: 300;
   flex-basis: 50px;
   font-size: 30px;
+  font-family: "Noto Sans Tangsa", sans-serif;
 }
 .direction-column > .name {
   overflow: hidden;
   width: 50px;
+  font-family: "Noto Sans Tangsa", sans-serif;
 }
 
 .card:nth-of-type(57),
@@ -261,16 +267,16 @@ body {
   grid-row: 9/10;
 }
 :root {
-  --alkali-metals: #154f5e;
-  --alkaline-earth-metal: #6e2031;
-  --transition-metals: #1f1747;
-  --post-trasition-metals: #1b3a34;
-  --metalloids: #463313;
-  --reactive-non-metals: #0e2344;
-  --noble-gases: #623842;
-  --lanthanides: #004a77;
-  --actinides: #613b28;
-  --unknown-properties: #46474c;
+  --alkali-metals: rgb(6, 51, 53);
+  --alkaline-earth-metal: rgb(110, 32, 49);
+  --transition-metals: rgb(31, 23, 71);
+  --post-trasition-metals: rgb(27, 58, 52);
+  --metalloids: rgb(70, 51, 19);
+  --reactive-non-metals: rgb(14, 35, 68);
+  --noble-gases: rgb(98, 56, 66);
+  --lanthanides: rgb(0, 74, 119);
+  --actinides: rgb(97, 59, 40);
+  --unknown-properties: rgb(70, 71, 76);
 }
 
 .card:nth-of-type(3),
@@ -419,12 +425,13 @@ body {
 }
 
 .card:hover {
-  /* display: visible; */
   transform: scale(1.8);
   border: none;
   z-index: 10;
-  box-shadow: 1px 1px 15px 3px rgb(194, 232, 241);
+  box-shadow: 1px 1px 15px 3px rgb(10, 181, 228);
   color: rgb(230, 224, 224);
+  /* background-color: var(--actinides); */
+  /* opacity: 0.9; */
 }
 .card:hover .weight {
   display: block;
@@ -432,29 +439,219 @@ body {
 
 .metal-bars {
   display: grid;
-  /* display: inline-block; */
-  /* width: 100%; */
-  /* margin: 0 25%; */
-  /* height: 155px; */
-  /* grid-template-columns: repeat(2, 3fr); */
-  /* flex-wrap: wrap; */
-  /* justify-content: start; */
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 500px;
+}
+.bar-card {
   display: flex;
+  width: 230px;
+  padding: 10px;
+  color: #fff;
+  text-align: justify;
+}
+input {
+  margin-right: 10px;
+  margin-top: 5px;
 }
 
-#alkMetal:checked {
-  background-color: red;
+label {
+  font-size: 19px;
+  font-family: "Noto Sans Tangsa", sans-serif;
+  font-weight: 300;
+  text-decoration: underline;
+  cursor: pointer;
 }
-#alkMetal {
-  border: 2px solid rgb(211, 23, 23);
-  background-color: rgb(240, 224, 224);
-
-  box-shadow: 0 0 0 5px rgb(236, 222, 221);
+input[type="radio"] {
+  border: 4px solid white;
   appearance: none;
   border-radius: 50%;
-  width: 15px;
-  height: 15px;
-  margin-left: 15px;
-  background-color: rgb(223, 32, 32);
+  width: 16px;
+  height: 16px;
   transition: all ease-in 0.2s;
+}
+
+#alkMetal {
+  box-shadow: 0 0 0 3px var(--alkali-metals);
+  background-color: var(--alkali-metals);
+}
+
+#alk-earth-metal {
+  box-shadow: 0 0 0 3px var(--alkaline-earth-metal);
+  background-color: var(--alkaline-earth-metal);
+}
+#transition-metal {
+  box-shadow: 0 0 0 3px var(--transition-metals);
+  background-color: var(--transition-metals);
+}
+#post-transition-metals {
+  box-shadow: 0 0 0 3px var(--post-trasition-metals);
+  background-color: var(--post-trasition-metals);
+}
+
+#metalloids {
+  box-shadow: 0 0 0 3px var(--metalloids);
+  background-color: var(--metalloids);
+}
+
+#reactive-non-metals {
+  box-shadow: 0 0 0 3px var(--reactive-non-metals);
+  background-color: var(--reactive-non-metals);
+}
+
+#noble-gases {
+  box-shadow: 0 0 0 3px var(--noble-gases);
+  background-color: var(--noble-gases);
+}
+
+#lanthanides {
+  box-shadow: 0 0 0 3px var(--lanthanides);
+  background-color: var(--lanthanides);
+}
+
+#actinides {
+  box-shadow: 0 0 0 3px var(--actinides);
+  background-color: var(--actinides);
+}
+#unknown-properties {
+  box-shadow: 0 0 0 3px var(--unknown-properties);
+  background-color: var(--unknown-properties);
+}
+
+.atom {
+  position: relative;
+  top: -43rem;
+  /* left: 25%;  */
+  margin: 0 auto;
+  background: blue;
+  width: 150px;
+}
+.orbit {
+  position: absolute;
+  z-index: 10;
+  width: 100px;
+  height: 200px;
+  left: 50%;
+  top: 50%;
+  margin: -100px -50px;
+  border: 4px solid rgba(33, 228, 130, 0.5);
+  border-radius: 50%;
+}
+.rot45 {
+  z-index: 6;
+  transform: rotate(45deg);
+}
+.rot90 {
+  z-index: 4;
+  transform: rotate(90deg);
+}
+.rot135 {
+  z-index: 6;
+  transform: rotate(135deg);
+}
+
+.prot {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  margin: 95px 45px;
+  border-radius: 50%;
+  background-color: rgb(59, 32, 0);
+  background-color: rgba(233, 235, 114, 0.7);
+  animation: pulse 5s infinite;
+}
+
+.elec {
+  position: absolute;
+  top: 96px;
+  left: -6px;
+}
+.elec:after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(231, 192, 18, 0.945);
+}
+
+.sp1 {
+  animation: lr 10s infinite;
+}
+.sp1:after {
+  animation: ud 10s infinite;
+}
+.sp2 {
+  animation: lr 6s infinite;
+}
+.sp2:after {
+  animation: ud 6s infinite;
+}
+.sp3 {
+  animation: lr 16s infinite;
+}
+.sp3:after {
+  animation: ud 16s infinite;
+}
+.sp4 {
+  animation: lr 5s infinite;
+}
+.sp4:after {
+  animation: ud 5s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    background-color: rgba(59, 32, 0, 0.7);
+  }
+  50% {
+    background-color: rgba(204, 132, 0, 0.8);
+    transform: scale(2);
+  }
+}
+
+@keyframes lr {
+  0% {
+    animation-timing-function: ease-in;
+    transform: translateX(0px);
+  }
+  25% {
+    animation-timing-function: ease-out;
+    transform: translateX(51px);
+  }
+  50% {
+    animation-timing-function: ease-in;
+    transform: translateX(104px);
+  }
+  75% {
+    animation-timing-function: ease-out;
+    transform: translateX(51px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes ud {
+  0% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+  25% {
+    animation-timing-function: ease-in;
+    transform: translateY(-102px);
+  }
+  50% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+  75% {
+    animation-timing-function: ease-in;
+    transform: translateY(102px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
